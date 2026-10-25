@@ -155,4 +155,7 @@ api.post('/draw/spin', (_, res) => {
 app.use('/api', api);
 app.use((req, res) => res.status(404).json({ error: 'Not found' }));
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`BrewNest API running on http://localhost:${PORT}`));
+
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`BrewNest API running on port ${PORT}`);
+});
