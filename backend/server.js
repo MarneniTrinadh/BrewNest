@@ -71,7 +71,7 @@ const auth = (req, res, next) => {
 
 // --- app ---
 const app = express();
-app.use(cors({ origin: process.env.CORS_ORIGIN || 'http://localhost:5173' }));
+app.use(cors({ origin: process.env.CORS_ORIGIN }));
 app.use(express.json({ limit: '100kb' }));
 const api = express.Router();
 
