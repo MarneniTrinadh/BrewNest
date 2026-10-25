@@ -1,0 +1,34 @@
+[
+  {
+    "code": "BREWLOYAL20",
+    "title": "20% Off All Artisan Whole Beans",
+    "desc": "Exclusive returning patron discount on orders above ₹600.",
+    "tag": "VIP Coffee Perk",
+    "type": "percent",
+    "val": 20
+  },
+  {
+    "code": "REFILL15",
+    "title": "15% Off Monthly Tea & Powder Refills",
+    "desc": "Stock up on Assam CTC, Darjeeling, and Filter Coffee powders.",
+    "tag": "Repeat Order Special",
+    "type": "percent",
+    "val": 15
+  },
+  {
+    "code": "SNACKCOMBO",
+    "title": "Buy 2 Bakery Snacks, Get 1 Free",
+    "desc": "Valid on Cupcakes, Brownies, and Fresh Butter Croissants.",
+    "tag": "Café Treat",
+    "type": "fixed",
+    "val": 120
+  },
+  {
+    "code": "DOUBLEBEANS",
+    "title": "Double VIP Bean Points (2X)",
+    "desc": "Earn 10 Bean points per ₹100 spent towards free beverage merchandise.",
+    "tag": "Loyalty Club",
+    "type": "percent",
+    "val": 10
+  }
+]
