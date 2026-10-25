@@ -71,7 +71,14 @@ const auth = (req, res, next) => {
 
 // --- app ---
 const app = express();
-app.use(cors({ origin: process.env.CORS_ORIGIN }));
+const allowedOrigins = [
+  'http://localhost:5173',
+  'https://brew-nest-qk6nnepaf-marneninadh.vercel.app',
+  'https://brew-nest-three.vercel.app',
+  process.env.CORS_ORIGIN
+].filter(Boolean);
+
+app.use(cors({ origin: allowedOrigins }));
 app.use(express.json({ limit: '100kb' }));
 const api = express.Router();
 
